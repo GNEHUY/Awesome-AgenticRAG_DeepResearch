@@ -1,9 +1,9 @@
 <div align="center">
   <!-- <p align="center"> -->
-  <h1 align="center"><strong>Awesome-AgenticRAG</strong></h1>
+  <h1 align="center"><strong>Awesome-AgenticRAG_DeepResearch</strong></h1>
 </div>
 
-🔬 列举一些关于AgenticRAG的系列文章，以2025年开始，包括Search-O1，Search-R1
+🔬 列举一些关于AgenticRAG、DeepResearch的系列文章，以2025年开始，包括Search-O1，Search-R1
 
 - [2025.01] [[Search-o1]](https://arxiv.org/abs/2501.05366) Search-o1: Agentic Search-Enhanced Large Reasoning Models 增强具有类似O1推理模式的LRMs的自主检索能力，使模型在推理过程中能动态检索外部知识，从而提高推理的准确性和可靠性 [![[code]](https://img.shields.io/github/stars/sunnynexus/Search-o1)](https://github.com/sunnynexus/Search-o1)
 - [2025.02] [[O1 Embedder]](https://arxiv.org/abs/2502.07555) O1 Embedder: Let Retrievers Think Before Action 已经有很多训练LLM作为Embedder的工作，如何让Embedder在检索目标文档之前生成对输入查询有用的thoughts，类似于一个推理的过程？[![[code]](https://img.shields.io/github/stars/RuiranYan/o1embedder)](https://github.com/RuiranYan/o1embedder)
