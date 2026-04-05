@@ -3,6 +3,10 @@
   <h1 align="center"><strong>Awesome-AgenticRAG_DeepResearch</strong></h1>
 </div>
 
+<div align="center">
+<a href="https://gnehuy.github.io/Awesome-AgenticRAG_DeepResearch/"><img src="https://img.shields.io/badge/Project%20Page-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Project Page"></a>
+</div>
+
 🔬 列举一些关于AgenticRAG、DeepResearch的系列文章，以2025年开始，包括Search-O1，Search-R1
 
 - [2025.01] [[Search-o1]](https://arxiv.org/abs/2501.05366) Search-o1: Agentic Search-Enhanced Large Reasoning Models 增强具有类似O1推理模式的LRMs的自主检索能力，使模型在推理过程中能动态检索外部知识，从而提高推理的准确性和可靠性 [![[code]](https://img.shields.io/github/stars/sunnynexus/Search-o1)](https://github.com/sunnynexus/Search-o1)
