@@ -15,6 +15,7 @@ let intersectionObserver = null;
 // === Initialization ===
 document.addEventListener('DOMContentLoaded', () => {
     renderStats();
+    renderYearNav();
     renderTagFilters();
     renderPapers();
     setupEventListeners();
@@ -27,6 +28,10 @@ function renderStats() {
     const hasCode = papers.filter(p => p.codeLinks.length > 0).length;
     const hasDataset = papers.filter(p => p.datasetLinks.length > 0).length;
     const openCount = papers.filter(p => p.tags.includes('Open-Source')).length;
+
+    const allYears = papers.map(p => p.year);
+    const minYear = Math.min(...allYears);
+    const maxYear = Math.max(...allYears);
 
     statsDashboard.innerHTML = `
         <div class="stat-card">
@@ -42,10 +47,20 @@ function renderStats() {
             <div class="stat-label">Datasets</div>
         </div>
         <div class="stat-card">
-            <div class="stat-value">${new Date().getFullYear() - papers[papers.length - 1]?.year || 1}</div>
-            <div class="stat-label">Years Active</div>
+            <div class="stat-value">${minYear}–${maxYear}</div>
+            <div class="stat-label">Year Span</div>
         </div>
     `;
+}
+
+// === Tag Filters ===
+// === Year Navigation ===
+function renderYearNav() {
+    const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
+    const placeholder = document.getElementById('year-nav-placeholder');
+    placeholder.innerHTML = years.map(y =>
+        `<a href="#" class="nav-link" data-filter="${y}">${y}</a>`
+    ).join('');
 }
 
 // === Tag Filters ===
@@ -238,7 +253,7 @@ function setupEventListeners() {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const filter = link.dataset.filter;
-            if (filter === 'all' || filter === '2025' || filter === '2026') {
+            if (filter === 'all' || /^\d{4}$/.test(filter)) {
                 activeYearFilter = filter;
                 document.querySelectorAll('.nav-link[data-filter]').forEach(l => l.classList.remove('active'));
                 link.classList.add('active');
