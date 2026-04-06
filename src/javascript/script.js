@@ -236,7 +236,7 @@ function createPaperCard(paper) {
             <div class="paper-header">
                 <span class="paper-date">${paper.date}</span>
                 <h2 class="paper-title">
-                    <a href="${paper.url}" target="_blank">${paper.title}</a>
+                    <a href="${paper.url}" target="_blank">${paper.name}</a>
                 </h2>
             </div>
             <p class="paper-abstract" onclick="this.classList.toggle('expanded')">${paper.description}</p>
