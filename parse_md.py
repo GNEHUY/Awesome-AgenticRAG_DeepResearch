@@ -8,6 +8,8 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'README.md'),
 lines = content.split('\n')
 
 tag_keywords = {
+    'Agent': ['agent', 'agents', 'agentic', '智能体', '代理', 'search agent', 'research agent', 'deep research agent'],
+    'RAG': ['rag', 'agentic rag', 'retrieval-augmented', 'retrieval augmented', 'retrieval-augmented generation', '检索增强', '检索增强生成', '检索增强推理', 'graph-rag', 'graphrag'],
     'RL-based': ['reinforcement learning', '强化学习', 'grpo', 'ppo', 'reinforce', 'policy optimization', '奖励'],
     'Self-Play': ['self-play', '自我进化', '自我博弈', '左右互搏', '互搏', 'self-evolving', 'self-evolve', '自进化'],
     'Memory': ['memory', '持久记忆', 'hypergraph', '超图', 'context register', 'state reconstruction', 'evolving report', '演进报告'],
@@ -26,7 +28,7 @@ tag_keywords = {
 
 # Organize tags by category for frontend display
 tag_methods = ['RL-based', 'Self-Play', 'Memory', 'Multi-Agent', 'Process Reward', 'SFT']
-tag_tasks = ['Search Agent', 'Multi-hop QA', 'Deep Research', 'Benchmark', 'Dataset']
+tag_tasks = ['Agent', 'RAG', 'Search Agent', 'Multi-hop QA', 'Deep Research', 'Benchmark', 'Dataset']
 tag_features = ['Token-Efficient', 'Training-free', 'Open-Source']
 all_tags = tag_methods + tag_tasks + tag_features
 
