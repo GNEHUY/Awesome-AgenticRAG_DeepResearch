@@ -11,7 +11,7 @@ tag_keywords = {
     'RL-based': ['reinforcement learning', '强化学习', 'grpo', 'ppo', 'reinforce', 'policy optimization', '奖励'],
     'Self-Play': ['self-play', '自我进化', '自我博弈', '左右互搏', '互搏', 'self-evolving', 'self-evolve', '自进化'],
     'Memory': ['memory', '持久记忆', 'hypergraph', '超图', 'context register', 'state reconstruction', 'evolving report', '演进报告'],
-    'Multi-Agent': ['multi-agent', '多智能体', 'agent', 'actor-refiner', '五智能体', '四智能体'],
+    'Multi-Agent': ['multi-agent', '多智能体', 'actor-refiner', '五智能体', '四智能体'],
     'Process Reward': ['过程奖励', '步骤级', '过程监督', 'credit assignment', '过程感知', '中间步骤', 'fine-grained'],
     'SFT': ['sft', '监督微调', 'supervised fine-tuning', 'dpo', 'preference optimization'],
     'Search Agent': ['搜索智能体', '搜索代理', 'research agent', '研究智能体', 'search agent', 'deep research agent'],
